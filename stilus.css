@@ -1,0 +1,60 @@
+body{
+    background-color:rgb(114, 196, 168);
+}
+.tarolo{
+    background-color:rgb(79, 81, 182);
+    width:80%;
+    max-width: 800px;
+    margin:auto ;
+    padding: 10px;
+}
+.tartalom{
+    background-color:rgb(95, 184, 114);
+    padding: 10px;
+    /*szöveg div-ek szülőeleme*/
+    display: grid;/*rács szerekezet létrehozása*/
+    grid-template-columns: 1fr 1fr;/*oszlopok szélesége nagyitáskor és kicsinyitéskor*/
+    gap:10px;
+
+}
+.szoveg{
+    background-color:rgb(182, 90, 117);
+    padding: 10px;
+    border:1px solid black;
+}
+.pic img{
+    width:100%;/*a kép szélesége kitőlti a tárolot*/
+}
+.kepek{
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows:200px 200px;/*kép méret*/
+    gap: 20px;/*rács közti távolság*/
+    
+}
+.pic{
+    overflow: hidden;/*ami kilogo részeket elrejti*/
+}
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;/*gombok egyásmellet milyen arányban*/
+}
+.menu a{
+    text-decoration: none;/*leszedjük az aláhuzást*/
+    color: rgb(229, 255, 0);
+}
+.menu li{
+    padding: 10px;
+    border-radius: 10px;/*lekeritet gomb*/
+    border: 1px solid blue;
+    background-color: black;
+}
+.menu li:hover{
+    background-color: aqua;
+}
+.menu a:hover{
+    background-color: rgba(136, 255, 0, 0.329);
+}
+
